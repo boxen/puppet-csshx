@@ -1,9 +1,9 @@
 
-class cssh {
+class csshx {
   include homebrew
 
   homebrew::formula { 'csshx':
-    source => 'puppet:///modules/clusterssh/brews/csshx.rb',
+    source => 'puppet:///modules/csshx/brews/csshx.rb',
     before => Package['boxen/brews/csshx'] ;
   }
 
