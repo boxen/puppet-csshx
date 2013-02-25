@@ -8,11 +8,7 @@ describe 'csshx' do
     }
   end
 
-  it do
-    should include_class('homebrew')
-
-    should contain_homebrew__formula('csshx')
-
-    should contain_package('boxen/brews/csshx')
-  end
+  it { should include_class('homebrew') }
+  it { should contain_homebrew__formula('csshx') }
+  it { should contain_package('boxen/brews/csshx') }
 end
