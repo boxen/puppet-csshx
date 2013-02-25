@@ -11,5 +11,8 @@ class Csshx < Formula
 
   def install
     bin.install 'csshX'
+
+    # Make symlinks for `cssh` as default command is `csshx`
+    File.symlink bin+'csshx', bin+'cssh'
   end
 end
