@@ -1,4 +1,9 @@
-
+# Public: Install Cluster SSH
+#
+# Examples
+#
+#   include csshx
+#
 class csshx {
   include homebrew
 
